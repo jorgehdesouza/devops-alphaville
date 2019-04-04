@@ -14,5 +14,5 @@ script:
   - pytest
   - pytest --cov=handler
 
-after_sucess:
+after_success:
   - coveralls
