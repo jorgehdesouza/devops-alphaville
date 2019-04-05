@@ -7,7 +7,7 @@ Resources:
   API:
     Type: AWS::Serverless::Api
     Properties:
-      DefinitionBody:
+    DefinitionBody:
                 swagger: 2.0
         info:
           title: !Join [ "-", [ Ref: "AWS::StackName", "API" ] ]
@@ -88,4 +88,3 @@ Resources:
 Outputs:
   API:
     Value: !Ref API.Stage
-    
