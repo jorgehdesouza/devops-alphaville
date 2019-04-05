@@ -7,8 +7,13 @@ Resources:
   API:
     Type: AWS::Serverless::Api
     Properties:
+<<<<<<< HEAD
     DefinitionBody:
                 swagger: 2.0
+=======
+      DefinitionBody:
+        swagger: 2.0
+>>>>>>> step5
         info:
           title: !Join [ "-", [ Ref: "AWS::StackName", "API" ] ]
         schemes:
