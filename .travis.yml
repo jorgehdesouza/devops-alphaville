@@ -15,10 +15,6 @@ script:
   - aws cloudformation validate-template --template-body file://cf.yaml
 after_success:
   - coveralls
-<<<<<<< HEAD
-
-=======
->>>>>>> step5
 before_deploy: aws cloudformation package --template-file cf.yaml --s3-bucket ${BUCKET_NAME} --output-template-file out.yaml
 deploy:
   provider: script
@@ -26,8 +22,4 @@ deploy:
   skip_cleanup: true
   on:
     all_branches: true
-<<<<<<< HEAD
     python: "3.6"
-=======
-    python: "3.6"
->>>>>>> step5
